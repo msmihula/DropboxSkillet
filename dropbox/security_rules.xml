@@ -1,0 +1,257 @@
+<entry name="Dropbox Uploads">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-uploading</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ action }}</action>
+  <description>1.2 Control Uploads - Dropbox</description>
+  <log-setting>default</log-setting>
+</entry>
+<entry name="Dropbox Downloads">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-downloading</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ action }}</action>
+  <description>1.3 Control Downloads - Dropbox</description>
+  <log-setting>default</log-setting>
+</entry>
+<entry name="Dropbox Editing">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-editing</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ action }}</action>
+  <description>1.4 Control File Management - Dropbox</description>
+  <log-setting>default</log-setting>
+</entry>
+<entry name="Dropbox Paper">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-paper</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ action }}</action>
+  <description>1.5 Control Paper - Dropbox</description>
+  <log-setting>default</log-setting>
+</entry>
+<entry name="Dropbox Posting">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-posting</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ action }}</action>
+  <description>1.6 Control Posting - Dropbox</description>
+  <log-setting>default</log-setting>
+</entry>
+<entry name="Dropbox Sharing">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-sharing</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ action }}</action>
+  <description>1.7 Control Sharing - Dropbox</description>
+  <log-setting>default</log-setting>
+</entry>
+<entry name="Sanction Dropbox">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ action }}</action>
+  <description>1.1 Sanction Dropbox</description>
+  <log-setting>default</log-setting>
+</entry>
+<entry name="SSL and Web">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>ssl</member>
+    <member>web-browsing</member>
+  </application>
+  <service>
+    <member>service-http</member>
+    <member>service-https</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>allow</action>
+  <log-setting>default</log-setting>
+</entry>
