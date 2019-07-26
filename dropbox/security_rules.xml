@@ -26,7 +26,7 @@
   <hip-profiles>
     <member>any</member>
   </hip-profiles>
-  <action>{{ action }}</action>
+  <action>{{ upload_action }}</action>
   <description>1.2 Control Uploads - Dropbox</description>
   <log-setting>default</log-setting>
 </entry>
@@ -58,7 +58,7 @@
   <hip-profiles>
     <member>any</member>
   </hip-profiles>
-  <action>{{ action }}</action>
+  <action>{{ download_action }}</action>
   <description>1.3 Control Downloads - Dropbox</description>
   <log-setting>default</log-setting>
 </entry>
@@ -90,7 +90,7 @@
   <hip-profiles>
     <member>any</member>
   </hip-profiles>
-  <action>{{ action }}</action>
+  <action>{{ edit_action }}</action>
   <description>1.4 Control File Management - Dropbox</description>
   <log-setting>default</log-setting>
 </entry>
@@ -122,7 +122,7 @@
   <hip-profiles>
     <member>any</member>
   </hip-profiles>
-  <action>{{ action }}</action>
+  <action>{{ paper_action }}</action>
   <description>1.5 Control Paper - Dropbox</description>
   <log-setting>default</log-setting>
 </entry>
@@ -154,7 +154,7 @@
   <hip-profiles>
     <member>any</member>
   </hip-profiles>
-  <action>{{ action }}</action>
+  <action>{{ posting_action }}</action>
   <description>1.6 Control Posting - Dropbox</description>
   <log-setting>default</log-setting>
 </entry>
@@ -186,7 +186,7 @@
   <hip-profiles>
     <member>any</member>
   </hip-profiles>
-  <action>{{ action }}</action>
+  <action>{{ sharing_action }}</action>
   <description>1.7 Control Sharing - Dropbox</description>
   <log-setting>default</log-setting>
 </entry>
@@ -218,7 +218,7 @@
   <hip-profiles>
     <member>any</member>
   </hip-profiles>
-  <action>{{ action }}</action>
+  <action>{{ sanction_action }}</action>
   <description>1.1 Sanction Dropbox</description>
   <log-setting>default</log-setting>
 </entry>

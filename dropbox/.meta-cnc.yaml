@@ -35,6 +35,69 @@ variables:
     description: Destination Zone name
     default: any
     type_hint: text
+  - name: upload_action
+    description: Allow file uploads to Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: download_action
+    description: Allow file downloads from Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: edit_action
+    description: Allow renaming or creating files and folders in Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: paper_action
+    description: Allow use of the collaboration application Paper in Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: posting_action
+    description: Allow commenting on files in Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: sharing_action
+    description: Allow sharing through Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: sanction_action
+    description: Allow all Dropbox application functions?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
 # ---------------------------------------------------------------------
 # end of variables section
 
