@@ -16,7 +16,8 @@ extends:
 # grouping of like snippets for dynamic menu creation in panhandler
 labels:
   collection:
-    - Dropbox_Collection
+    - Dropbox
+    - Configure
 
 # ---------------------------------------------------------------------
 # end of preamble section
