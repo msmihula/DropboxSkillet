@@ -1,10 +1,10 @@
 # skillet preamble information used by panhandler
 # ---------------------------------------------------------------------
 # unique snippet name
-name: Control_Dropbox
+name: Control_Dropbox_Panos
 # label used for menu selection
-label: Dropbox Visibility and Control
-description: This procedure controls Dropbox traffic through security policy rules.
+label: Dropbox Visibility and Control in PAN-OS
+description: This procedure controls Dropbox traffic through security policy rules in PAN-OS.
 
 # type of device configuration
 # common types are panorama, panos, and template

@@ -32,7 +32,6 @@
   </hip-profiles>
   <action>{{ upload_action }}</action>
   <description>1.2 Control Uploads - Dropbox</description>
-  <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Downloads">
   <target>
@@ -67,7 +66,6 @@
   </hip-profiles>
   <action>{{ download_action }}</action>
   <description>1.3 Control Downloads - Dropbox</description>
-  <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Editing">
   <target>
@@ -102,7 +100,6 @@
   </hip-profiles>
   <action>{{ edit_action }}</action>
   <description>1.4 Control File Management - Dropbox</description>
-  <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Paper">
   <target>
@@ -137,7 +134,6 @@
   </hip-profiles>
   <action>{{ paper_action }}</action>
   <description>1.5 Control Paper - Dropbox</description>
-  <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Posting">
   <target>
@@ -172,7 +168,6 @@
   </hip-profiles>
   <action>{{ posting_action }}</action>
   <description>1.6 Control Posting - Dropbox</description>
-  <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Sharing">
   <target>
@@ -207,7 +202,6 @@
   </hip-profiles>
   <action>{{ sharing_action }}</action>
   <description>1.7 Control Sharing - Dropbox</description>
-  <log-setting>default</log-setting>
 </entry>
 <entry name="Sanction Dropbox">
   <target>
@@ -242,7 +236,6 @@
   </hip-profiles>
   <action>{{ sanction_action }}</action>
   <description>1.1 Sanction Dropbox</description>
-  <log-setting>default</log-setting>
 </entry>
 <entry name="SSL and Web">
   <target>
@@ -278,6 +271,5 @@
     <member>any</member>
   </hip-profiles>
   <action>allow</action>
-  <log-setting>default</log-setting>
 </entry>
 </rules>
