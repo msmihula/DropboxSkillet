@@ -1,3 +1,35 @@
+<entry name="Dropbox Base">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-base</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>allow</action>
+  <description>Dropbox Base</description>
+  <log-setting>default</log-setting>
+</entry>
 <entry name="Dropbox Uploads">
   <to>
     <member>{{ destination_zone }}</member>
