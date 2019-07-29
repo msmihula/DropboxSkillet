@@ -1,36 +1,8 @@
-<entry name="Dropbox Base">
-  <to>
-    <member>{{ destination_zone }}</member>
-  </to>
-  <from>
-    <member>{{ source_zone }}</member>
-  </from>
-  <source>
-    <member>any</member>
-  </source>
-  <destination>
-    <member>any</member>
-  </destination>
-  <source-user>
-    <member>any</member>
-  </source-user>
-  <category>
-    <member>any</member>
-  </category>
-  <application>
-    <member>dropbox-base</member>
-  </application>
-  <service>
-    <member>application-default</member>
-  </service>
-  <hip-profiles>
-    <member>any</member>
-  </hip-profiles>
-  <action>allow</action>
-  <description>Dropbox Base</description>
-  <log-setting>default</log-setting>
-</entry>
+<rules>
 <entry name="Dropbox Uploads">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -63,6 +35,9 @@
   <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Downloads">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -95,6 +70,9 @@
   <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Editing">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -127,6 +105,9 @@
   <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Paper">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -159,6 +140,9 @@
   <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Posting">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -191,6 +175,9 @@
   <log-setting>default</log-setting>
 </entry>
 <entry name="Dropbox Sharing">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -223,6 +210,9 @@
   <log-setting>default</log-setting>
 </entry>
 <entry name="Sanction Dropbox">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -255,6 +245,9 @@
   <log-setting>default</log-setting>
 </entry>
 <entry name="SSL and Web">
+  <target>
+    <negate>no</negate>
+  </target>
   <to>
     <member>{{ destination_zone }}</member>
   </to>
@@ -287,3 +280,4 @@
   <action>allow</action>
   <log-setting>default</log-setting>
 </entry>
+</rules>

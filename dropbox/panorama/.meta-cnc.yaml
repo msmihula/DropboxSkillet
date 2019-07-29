@@ -9,7 +9,7 @@ description: This procedure controls Dropbox traffic through security policy rul
 # type of device configuration
 # common types are panorama, panos, and template
 # https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
-type: panos
+type: panorama
 # preload static or default-based templates
 extends:
 

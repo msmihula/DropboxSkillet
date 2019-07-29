@@ -1,0 +1,114 @@
+# skillet preamble information used by panhandler
+# ---------------------------------------------------------------------
+# unique snippet name
+name: Control_Dropbox
+# label used for menu selection
+label: Dropbox Visibility and Control
+description: This procedure controls Dropbox traffic through security policy rules.
+
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+type: panos
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+  collection:
+    - Dropbox
+    - Configure
+
+# ---------------------------------------------------------------------
+# end of preamble section
+
+# variables section
+# ---------------------------------------------------------------------
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
+variables:
+  - name: source_zone
+    description: Source Zone name
+    default: any
+    type_hint: text
+  - name: destination_zone
+    description: Destination Zone name
+    default: any
+    type_hint: text
+  - name: upload_action
+    description: Allow file uploads to Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: download_action
+    description: Allow file downloads from Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: edit_action
+    description: Allow renaming or creating files and folders in Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: paper_action
+    description: Allow use of the collaboration application Paper in Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: posting_action
+    description: Allow commenting on files in Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: sharing_action
+    description: Allow sharing through Dropbox?
+    default: Deny
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+  - name: sanction_action
+    description: Allow all Dropbox (including required base) application functions?
+    default: Allow
+    type_hint: dropdown
+    dd_list:
+      - key: 'Allow'
+        value: 'allow'
+      - key: 'Deny'
+        value: 'deny'
+# ---------------------------------------------------------------------
+# end of variables section
+
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+  - name: security_rules
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/security/rules
+    file: security_rules.xml
+# ---------------------------------------------------------------------
+# end of snippets section
