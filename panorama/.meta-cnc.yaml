@@ -91,8 +91,8 @@ variables:
       - key: 'Deny'
         value: 'deny'
   - name: sanction_action
-    description: Allow all Dropbox application functions?
-    default: Deny
+    description: Allow Dropbox (including required base) application functions?
+    default: Allow
     type_hint: dropdown
     dd_list:
       - key: 'Allow'
@@ -108,7 +108,8 @@ variables:
 # files will load in the order listed
 snippets:
   - name: security_rules
-    xpath: /config/shared/post-rulebase/security
+    # xpath: /config/shared/post-rulebase/security
+    xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG1']/post-rulebase/security/rules
     file: security_rules.xml
 # ---------------------------------------------------------------------
 # end of snippets section
