@@ -28,6 +28,10 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 variables:
+  - name: device_group
+    description: Device Group name
+    default: shared
+    type_hint: text
   - name: source_zone
     description: Source Zone name
     default: any
@@ -109,7 +113,7 @@ variables:
 snippets:
   - name: security_rules
     # xpath: /config/shared/post-rulebase/security
-    xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG1']/post-rulebase/security
+    xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group }}']/post-rulebase/security
     file: security_rules.xml
 # ---------------------------------------------------------------------
 # end of snippets section
