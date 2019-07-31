@@ -4,7 +4,7 @@
 name: Upload_Dropbox_Panos
 # label used for menu selection
 label: PAN-OS - Step 1.2 - Control Uploads
-description: Stop Uploads into the Dropbox application on PAN-OS?
+description: Control Uploads into the Dropbox application on PAN-OS.
 
 # type of device configuration
 # common types are panorama, panos, and template
@@ -37,7 +37,7 @@ variables:
     default: any
     type_hint: text
   - name: upload_action
-    description: Stop uploads to Dropbox?
+    description: Deny uploads to Dropbox?
     default: Deny
     type_hint: dropdown
     dd_list:

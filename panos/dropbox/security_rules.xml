@@ -1,3 +1,4 @@
+{% if upload_action == 'allow' %}
 <entry name="Dropbox Uploads">
   <to>
     <member>{{ destination_zone }}</member>
@@ -29,6 +30,7 @@
   <action>{{ upload_action }}</action>
   <description>1.2 Control Uploads - Dropbox</description>
 </entry>
+{% endif %}
 <entry name="Dropbox Downloads">
   <to>
     <member>{{ destination_zone }}</member>
