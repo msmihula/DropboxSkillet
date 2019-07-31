@@ -1,4 +1,4 @@
-{% if upload_action == 'allow' %}
+{% if upload_action == 'Allow' %}
 <entry name="Dropbox Uploads">
   <to>
     <member>{{ destination_zone }}</member>
