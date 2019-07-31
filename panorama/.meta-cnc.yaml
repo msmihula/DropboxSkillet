@@ -28,9 +28,18 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 variables:
-  - name: device_group
-    description: Device Group name
-    default: shared
+  - name: device_group_type
+    description: Should the policy be put into the Shared or a specific Device Group in Panorama?
+    default: Shared
+    type_hint: dropdown
+    dd_list:
+      - key: 'Shared'
+        value: '/config/shared/post-rulebase/security'
+      - key: 'Specific Device Group'
+        value: "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group_name }}']/post-rulebase/security"
+  - name: device_group_name
+    description: If a specific Device Group please enter the name
+    default: None
     type_hint: text
   - name: source_zone
     description: Source Zone name
@@ -113,7 +122,8 @@ variables:
 snippets:
   - name: security_rules
     # xpath: /config/shared/post-rulebase/security
-    xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group }}']/post-rulebase/security
+    # xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group }}']/post-rulebase/security
+    xpath:  {{ device_group_type }}
     file: security_rules.xml
 # ---------------------------------------------------------------------
 # end of snippets section
