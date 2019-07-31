@@ -34,9 +34,9 @@ variables:
     type_hint: dropdown
     dd_list:
       - key: 'Shared'
-        value: '/config/shared/post-rulebase/security'
+        value: 'shared/post-rulebase/security'
       - key: 'Specific Device Group'
-        value: "/config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group_name }}']/post-rulebase/security"
+        value: "devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group_name }}']/post-rulebase/security"
   - name: device_group_name
     description: If a specific Device Group please enter the name
     default: None
@@ -123,7 +123,7 @@ snippets:
   - name: security_rules
     # xpath: /config/shared/post-rulebase/security
     # xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group }}']/post-rulebase/security
-    xpath:  {{ device_group_type }}
+    xpath:  /config/{{ device_group_type }}
     file: security_rules.xml
 # ---------------------------------------------------------------------
 # end of snippets section
