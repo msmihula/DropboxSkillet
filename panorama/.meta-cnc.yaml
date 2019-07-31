@@ -36,7 +36,7 @@ variables:
       - key: 'Shared'
         value: 'shared/post-rulebase/security'
       - key: 'Specific Device Group'
-        value: "devices/entry[@name='localhost.localdomain']/device-group/entry[@name='"{{ device_group_name }}"']/post-rulebase/security"
+        value: "devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DG1']/post-rulebase/security"
   - name: device_group_name
     description: If a specific Device Group please enter the name
     default: None
