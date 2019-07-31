@@ -1,0 +1,94 @@
+<entry name="Dropbox Uploads">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox-uploading</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ upload_action }}</action>
+  <description>1.2 Control Uploads - Dropbox</description>
+</entry>
+<entry name="Dropbox">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>dropbox</member>
+  </application>
+  <service>
+    <member>application-default</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>{{ sanction_action }}</action>
+  <description>1.1 Sanction Dropbox</description>
+</entry>
+<entry name="SSL and Web">
+  <to>
+    <member>{{ destination_zone }}</member>
+  </to>
+  <from>
+    <member>{{ source_zone }}</member>
+  </from>
+  <source>
+    <member>any</member>
+  </source>
+  <destination>
+    <member>any</member>
+  </destination>
+  <source-user>
+    <member>any</member>
+  </source-user>
+  <category>
+    <member>any</member>
+  </category>
+  <application>
+    <member>ssl</member>
+    <member>web-browsing</member>
+  </application>
+  <service>
+    <member>service-http</member>
+    <member>service-https</member>
+  </service>
+  <hip-profiles>
+    <member>any</member>
+  </hip-profiles>
+  <action>allow</action>
+</entry>
