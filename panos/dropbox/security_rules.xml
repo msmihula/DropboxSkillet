@@ -31,6 +31,7 @@
   <description>1.2 Control Uploads - Dropbox</description>
 </entry>
 {% endif %}
+{% if download_action == 'Allow' %}
 <entry name="Dropbox Downloads">
   <to>
     <member>{{ destination_zone }}</member>
@@ -62,6 +63,8 @@
   <action>{{ download_action }}</action>
   <description>1.3 Control Downloads - Dropbox</description>
 </entry>
+{% endif %}
+{% if edit_action == 'Allow' %}
 <entry name="Dropbox Editing">
   <to>
     <member>{{ destination_zone }}</member>
@@ -93,6 +96,8 @@
   <action>{{ edit_action }}</action>
   <description>1.4 Control File Management - Dropbox</description>
 </entry>
+{% endif %}
+{% if paper_action == 'Allow' %}
 <entry name="Dropbox Paper">
   <to>
     <member>{{ destination_zone }}</member>
@@ -124,6 +129,8 @@
   <action>{{ paper_action }}</action>
   <description>1.5 Control Paper - Dropbox</description>
 </entry>
+{% endif %}
+{% if posting_action == 'Allow' %}
 <entry name="Dropbox Posting">
   <to>
     <member>{{ destination_zone }}</member>
@@ -155,6 +162,8 @@
   <action>{{ posting_action }}</action>
   <description>1.6 Control Posting - Dropbox</description>
 </entry>
+{% endif %}
+{% if sharing_action == 'Allow' %}
 <entry name="Dropbox Sharing">
   <to>
     <member>{{ destination_zone }}</member>
@@ -186,6 +195,7 @@
   <action>{{ sharing_action }}</action>
   <description>1.7 Control Sharing - Dropbox</description>
 </entry>
+{% endif %}
 <entry name="Sanction Dropbox">
   <to>
     <member>{{ destination_zone }}</member>
