@@ -34,13 +34,22 @@ variables:
     type_hint: dropdown
     dd_list:
       - key: 'Shared'
-        value: 'shared/post-rulebase/security'
+        value: 'shared/'
       - key: 'Specific Device Group'
-        value: "devices/entry[@name='localhost.localdomain']/device-group/entry[@name='DeviceGroup1']/post-rulebase/security"
+        value: "devices/entry[@name='localhost.localdomain']/device-group/entry[@name='"
   - name: device_group_name
     description: If a specific Device Group please enter the name
     default: None
     type_hint: text
+  - name: rulebase_type
+    description: Which type of rulebase do you want the dropbox rules assigned?
+    default: Post
+    type_hint: dropdown
+    dd_list:
+      - key: 'Pre'
+        value: 'pre-rulebase'
+      - key: 'Post'
+        value: 'post-rulebase'
   - name: source_zone
     description: Source Zone name
     default: any
@@ -123,7 +132,8 @@ snippets:
   - name: security_rules
     # xpath: /config/shared/post-rulebase/security
     # xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group }}']/post-rulebase/security
-    xpath:  /config/{{ device_group_type }}
+    # xpath:  /config/{{ device_group_type }}
+    xpath: /config/{{ device_group_type ~ rulebase_type ~ "/security" if device_group_type == "shared/" else device_group_type ~ device_group_name ~ "']/" ~ rulebase_type ~ "/security" }}
     file: security_rules.xml
 # ---------------------------------------------------------------------
 # end of snippets section
