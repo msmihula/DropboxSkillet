@@ -130,9 +130,6 @@ variables:
 # files will load in the order listed
 snippets:
   - name: security_rules
-    # xpath: /config/shared/post-rulebase/security
-    # xpath:  /config/devices/entry[@name='localhost.localdomain']/device-group/entry[@name='{{ device_group }}']/post-rulebase/security
-    # xpath:  /config/{{ device_group_type }}
     xpath: /config/{{ device_group_type ~ rulebase_type ~ "/security" if device_group_type == "shared/" else device_group_type ~ device_group_name ~ "']/" ~ rulebase_type ~ "/security" }}
     file: security_rules.xml
 # ---------------------------------------------------------------------
